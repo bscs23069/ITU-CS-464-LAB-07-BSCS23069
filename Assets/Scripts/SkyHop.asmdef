@@ -1,0 +1,7 @@
+{
+    "name": "SkyHop",
+    "references": ["Unity.TextMeshPro", "Unity.InputSystem", "UnityEngine.UI"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "autoReferenced": true
+}
