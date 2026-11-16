@@ -98,6 +98,17 @@ Colour is never the only signal. A locked level also shows a lock, a switch also
 - **Touch targets:** every button is at least 130 × 130 px, about 8 mm on a typical phone. That is above Android's 48 dp (about 7.6 mm). A switch toggles from anywhere on its 860 × 150 row, and a slider can be grabbed anywhere on its 440 × 100 track. The main actions sit in the bottom half, where the thumb reaches.
 - **Consistency:** one button style for each level of importance (teal primary, navy secondary, gold for spending, red for danger). Every button has a darker lip under it so it looks pressable, and the back button is in the same corner on every inner screen.
 
+### Greyscale check
+
+For each screen I saved the colour screenshot (`NN-name-colour.png`) and a greyscale copy beside it (`NN-name-greyscale.png`), converted by luminance (the same as GIMP's Colors > Desaturate > Luminance). Then I checked that headings, body text, buttons, backgrounds, and the selected and disabled states were still apart without hue.
+
+The check found two real problems, and I fixed both with a non-colour cue rather than by changing hue:
+
+- **Danger buttons** (Quit to menu, Reset progress): the red and the navy buttons were nearly the same grey. Every danger button now has a light outline.
+- **Coins in the game:** the gold coins disappeared into the light sky. Each coin now sits on a dark disc.
+
+I took the screenshots again after the fixes. Each screen's section below has its annotated colour image, the colour original, the greyscale copy and one line on what the check found.
+
 ### Motion
 
 Each ease is chosen for what the motion has to say:
@@ -123,7 +134,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 1. Title
 
-<img src="Docs/screens/01-title.png" width="760">
+<img src="Docs/screens/01-title-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/01-title-colour.png" width="300"> | <img src="Docs/screens/01-title-greyscale.png" width="300"> |
+
+**Greyscale check:** No change needed. The logo is the lightest and largest shape, the prompt is white on dark, and the hopper stays a mid grey with its dark face.
 
 **Purpose:** the first impression: the game's name, its hero and one clear thing to do.
 
@@ -137,7 +154,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 2. Main menu
 
-<img src="Docs/screens/02-main.png" width="760">
+<img src="Docs/screens/02-main-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/02-main-colour.png" width="300"> | <img src="Docs/screens/02-main-greyscale.png" width="300"> |
+
+**Greyscale check:** No change needed. Play turns light grey with dark text and stands well apart from the dark-grey secondary buttons; the pills keep light numbers on dark.
 
 **Purpose:** the hub. Play is one tap away, and so is everything else.
 
@@ -155,7 +178,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 3. Level select
 
-<img src="Docs/screens/03-levels.png" width="760">
+<img src="Docs/screens/03-levels-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/03-levels-colour.png" width="300"> | <img src="Docs/screens/03-levels-greyscale.png" width="300"> |
+
+**Greyscale check:** No change needed. Open tiles are a mid grey and locked tiles are darker, and locked ones also have a lock instead of a number. Earned stars are light, missing ones faint.
 
 **Purpose:** choose one of 12 levels and see your progress.
 
@@ -171,7 +200,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 4. Characters
 
-<img src="Docs/screens/04-characters.png" width="760">
+<img src="Docs/screens/04-characters-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/04-characters-colour.png" width="300"> | <img src="Docs/screens/04-characters-greyscale.png" width="300"> |
+
+**Greyscale check:** No change needed. The current page dot is lighter and also bigger; the locked badge has a lock icon and the price, not just its red.
 
 **Purpose:** browse the five hoppers and pick one to play as.
 
@@ -188,7 +223,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 5. Shop
 
-<img src="Docs/screens/05-shop.png" width="760">
+<img src="Docs/screens/05-shop-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/05-shop-colour.png" width="300"> | <img src="Docs/screens/05-shop-greyscale.png" width="300"> |
+
+**Greyscale check:** No change needed. The gold buy buttons are light with dark text, and Owned has a tick and a word. The red flash on the coin counter is faint in grey, but the shake and the toast carry the same message.
 
 **Purpose:** spend coins on new hoppers, and collect a free gift once.
 
@@ -205,7 +246,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 6. Settings
 
-<img src="Docs/screens/06-settings.png" width="760">
+<img src="Docs/screens/06-settings-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/06-settings-colour.png" width="300"> | <img src="Docs/screens/06-settings-greyscale.png" width="300"> |
+
+**Greyscale check:** **Changed.** In greyscale the red Reset button was nearly the same grey as the navy buttons, so every danger button now has a light outline (a non-colour cue). The switches already read by knob position: right and light means on.
 
 **Purpose:** sound volume, vibration, reduce motion and resetting progress. It opens from the main menu and from Pause, and Back returns to whichever one opened it.
 
@@ -222,7 +269,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 7. Game (HUD)
 
-<img src="Docs/screens/07-game.png" width="760">
+<img src="Docs/screens/07-game-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/07-game-colour.png" width="300"> | <img src="Docs/screens/07-game-greyscale.png" width="300"> |
+
+**Greyscale check:** **Changed.** The gold coins and the light sky turned the same grey, so the coins almost vanished. Each coin now sits on a dark navy disc, which shows as a dark ring on the light sky.
 
 **Purpose:** the game itself, small but playable. The hopper runs by itself, and a tap anywhere makes it jump. Ground coins are free, air coins need a jump, and the share you collect decides 1 to 3 stars. It is there so Pause and Results have a real game to sit on.
 
@@ -240,7 +293,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 8. Pause
 
-<img src="Docs/screens/08-pause.png" width="760">
+<img src="Docs/screens/08-pause-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/08-pause-colour.png" width="300"> | <img src="Docs/screens/08-pause-greyscale.png" width="300"> |
+
+**Greyscale check:** **Changed.** Quit to menu merged with Restart and Settings into one grey. It now has the light outline of the danger style, as well as being shorter, last and set apart.
 
 **Purpose:** stop the game and choose to resume, restart, change settings or quit.
 
@@ -255,7 +314,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 9. Results
 
-<img src="Docs/screens/09-results.png" width="760">
+<img src="Docs/screens/09-results-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/09-results-colour.png" width="300"> | <img src="Docs/screens/09-results-greyscale.png" width="300"> |
+
+**Greyscale check:** No change needed. Earned stars are light and the missing star dark; Next is light against the two dark icon buttons; the New best! badge keeps white text on mid grey.
 
 **Purpose:** show how the level went (stars, coins, a new best) and offer the next step.
 
@@ -272,7 +337,13 @@ Each ease is chosen for what the motion has to say:
 
 ## 10. Credits
 
-<img src="Docs/screens/10-credits.png" width="760">
+<img src="Docs/screens/10-credits-annotated.png" width="760">
+
+| Colour | Greyscale |
+|---|---|
+| <img src="Docs/screens/10-credits-colour.png" width="300"> | <img src="Docs/screens/10-credits-greyscale.png" width="300"> |
+
+**Greyscale check:** No change needed. Section labels are a lighter muted grey and smaller than the white names, so the grouping survives without colour.
 
 **Purpose:** say who made the game, and credit the fonts and the games that inspired the menus.
 
@@ -294,6 +365,7 @@ Each ease is chosen for what the motion has to say:
 - **Design, code, layout and sprites:** Mayasa Fakhar. Every icon, the hopper and the backgrounds were drawn in code with Python (Pillow). No AI-generated images.
 - **Fonts:** [Lilita One](https://fonts.google.com/specimen/Lilita+One) by Juan Montoreano and [Poppins](https://fonts.google.com/specimen/Poppins) by Indian Type Foundry, both under the SIL Open Font License. The licences are in `Assets/Fonts`.
 - **Sound:** made in code at runtime (`Sfx.cs`).
+- **TextMesh Pro Essential Resources** (in `Assets/TextMesh Pro`): Unity's own package, including its LiberationSans font.
 - **Inspiration:**
   - *Crossy Road* (Hipster Whale): the one-character-at-a-time carousel.
   - *Cut the Rope* (ZeptoLab): the level grid with stars and locks.
