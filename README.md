@@ -2,7 +2,7 @@
 
 A complete mobile menu system for **Sky Hop**, my own small platformer: a round little hopper runs across the sky and you tap to jump for coins. It has 10 connected screens, all working in Unity, with eased tweens for every screen change and every important press.
 
-- **Demo video:** [VIDEO LINK]
+- **Demo video:** https://drive.google.com/file/d/16Hb2DhWvaAoxFqRqMJ2KktU4Bboq42bs/view?usp=sharing (1:18)
 - **Unity:** 6000.3.27f1 (Unity 6.3), Input System, TextMesh Pro
 - **Scene:** `Assets/Scenes/SkyHop.unity` (the only scene)
 
